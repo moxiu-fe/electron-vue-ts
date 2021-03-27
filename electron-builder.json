@@ -1,0 +1,58 @@
+{
+  "productName": "electron-vue-ts",
+  "appId": "com.mydomain.electron-vue-ts",
+  "copyright": "Copyright © 2019 com.mydomain.electron-vue-ts",
+  "artifactName": "electron-vue-ts-${version}.${ext}",
+  "directories": {
+    "output": "dist",
+    "app": "./"
+  },
+  "files": [
+    "app/**/*",
+    "!**/node_modules/**/*",
+    "**/*.map"
+  ],
+  "asarUnpack": "**/*.node",
+  "publish": [
+    {
+      "provider": "generic",
+      "url": "https://electron-vue-ts.mydomain.com/"
+    }
+  ],
+  "releaseInfo": {
+    "releaseName": "",
+    "releaseNotes": "1、electron-vue-ts"
+  },
+  "dmg": {
+    "sign": false,
+    "contents": [
+      {
+        "x": 410,
+        "y": 150,
+        "type": "link",
+        "path": "/Applications"
+      },
+      {
+        "x": 130,
+        "y": 150,
+        "type": "file"
+      }
+    ]
+  },
+  "mac": {
+    "icon": "icons/icon.icns",
+    "hardenedRuntime": true,
+    "gatekeeperAssess": false,
+    "identity": "your appId identity",
+    "entitlements": "./entitlements.mac.plist",
+    "entitlementsInherit": "./entitlements.mac.plist",
+    "category": "public.app-category.social-networking",
+    "target": [
+      "dmg",
+      "zip"
+    ],
+    "minimumSystemVersion": "10.9.0"
+  },
+  "afterSign": "./notarization.js",
+  "afterAllArtifactBuild": "./archiveZIP.js"
+}

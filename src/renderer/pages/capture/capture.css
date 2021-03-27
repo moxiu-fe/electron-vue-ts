@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "capture iconfont";
+  src: url('./assets/captureIconfont/captureIconfont.eot?t=1560409731225');
+  /* IE9 */
+  src: url('./assets/captureIconfont/captureIconfont.eot?t=1560409731225#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQYAAsAAAAACIgAAAPMAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDSAqDeIM1ATYCJAMYCw4ABCAFhG0HWxtuBxHVmyjZj4Pq1g/jC6a835LkOiabJQw5+v0VD9Tc59vsJpdDLChiUEyOwAJpIEtCs6zk8c0VjPhDdtYG4s27k9CFM5u9VW4yByqoHmAHs4bbj/7/OWa6tAnkt61dIsuikvZG4/GABhaRtl0L34EcH5DeMHZBSzxNQIPhJggrFm/YoZSYkwLCaebYAWVGLzVkBqWgqFiZhIdyZXYr+4IHwc+H/6aFkkwemTO3HF152JJq9ODDeLN2024PQTCdFWwdEROQCFcr7efFKDhB1KD+hWQdmpQyqRpdjaumV78HH9ZqZMSmO2iybMQh/3mCnFBA6U1gAwzlVKMdCpFqHIWMajqFRPWbQmDwYZUcFBOOKHEPn2HcBI8MgijI2v3DQv+QlA593pyuPdTu2ERn2g/U2OO796bgYM1AmxPFXXy61kUjTqXWAesQg/eXt+2nPL240Hj1Y56k9lVblvLy2SLTjR/DJOlX4VFbMkWrfaMM+fbbpZvTyb4DNY5Ng3vKn3/f+PTrRu2mLdoXP7Y8+7aJ5rQ9n53enc05qGRLccdyuTE/Z5ZbKvp+/XrkneDNffmyf3cunOnJnT9j/CnvhtuNrO+syK92uqDtrnWzy1XgxHz8tdSMqROMZhOvvD4V1ZWpeJPZf9zU371k6drta5cuVfRvos5Wpw/vafUM9WRLuYut1DDG9xe5/f6tOU+uai/pO/Om/h9PHl+oNFZaDx2yVO66YPbbZhP3dBNpbXbkrSuppRz4BpOjw3rTBb9d2fiaf4rjK9CauV/NXNY/cv/INxPMXWaqAn6XeE1aA3GJ9CLEr5GiFr9mXyHeym789N8xZJjTFTLN/Fs2JvBrjKs+KKolEX9OobPgFws6NiVNZBqKpDR2SgQUZo/GJ9IGq40f6+7wHim7O6cTlLoTyNQZBlFpBDJhJ0Cu0QwolBZDg/GWrG/UCZMJqR7jNAII2hyDTIt3ELW5h0zYd5Dr8RUKbUEGDXYF246NRgVGuwDDCIFxEC0FTEwUkG0i2jBzPaQLuQhOiwL8ZohTjAeMGz02H1kCBYinmJMqoscTggDCIg8Wg/Mgx4kgicV8GCOjE4Qkp48Zg6peaXRM5Cmt5TAogoDigKhSACNGJEBeZ0Jb+P71IFohTgRuaKiybwZhKUzvwDijje2AXCIXOjXcSv+UIrTxCALhcQgm4gGLoRXirKAISFYPywfFEKMlBviTphuDWqGu8tHLK/m33AUNzHuLkIUYUshDEeqUFyJCLAEFWllQWMJERKXLWBZh1GUJUaCtjAZfdmJEoDlIUQ==') format('woff2'),
+    url('./assets/captureIconfont/captureIconfont.woff?t=1560409731225') format('woff'),
+    url('./assets/captureIconfont/captureIconfont.ttf?t=1560409731225') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./assets/captureIconfont/captureIconfont.svg?t=1560409731225#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+body{
+  cursor: default;
+}
+
+.capture-iconfont {
+  font-family: "capture iconfont";
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.capture-icon-wancheng:before {
+  content: "\e6e5";
+}
+
+.capture-icon-quxiao:before {
+  content: "\e62a";
+}
+
+.capture-icon-xiazai:before {
+  content: "\e627";
+}
+
+.capture-icon-zhongzhi:before {
+  content: "\e633";
+}
+
+.capture-icon-rectangle:before {
+  content: "\e790";
+}
+
+html,
+body,
+div {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+body {
+  cursor: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent !important;
+}
+
+.capture-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.capture-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.capture-image-canvas {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+.capture-image-canvas2 {
+  position: absolute;
+  display: none;
+  z-index: -1;
+}
+
+.capture-size-info {
+  position: absolute;
+  color: #ffffff;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px !important;
+  border-radius: 2px;
+  font-family: Arial Consolas sans-serif;
+  display: none;
+  z-index: 2;
+}
+
+.capture-toolbar {
+  position: absolute;
+  color: #343434;
+  font-size: 12px;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-family: Arial Consolas sans-serif;
+  display: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  align-items: center;
+}
+
+.capture-toolbar .capture-iconfont {
+  font-size: 24px !important;
+  padding: 2px 5px !important;
+}
+
+.capture-toolbar .capture-icon-quxiao {
+  color: red;
+}
+
+.capture-toast {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  font-size: 14px;
+  text-align: center;
+  background: #e4e4e4;
+  border-radius: 5px;
+  color: #343434;
+  display: none;
+}
+
+.capture-toast .capture-icon {
+  font-size: 100px;
+}

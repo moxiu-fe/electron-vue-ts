@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+
+<body>
+  <div id="js-bg" class="capture-bg"></div>
+  <div id="main-div">
+    <div id="js-mask" class="capture-mask"></div>
+    <canvas id="js-canvas" class="capture-image-canvas"></canvas>
+    <canvas id="js-canvas2" class="capture-image-canvas2"></canvas>
+    <div id="js-size-info" class="capture-size-info"></div>
+    <div id="js-toolbar" class="capture-toolbar">
+      <div class="capture-icon capture-iconfont capture-icon-rectangle" id="js-tool-rect"></div>
+      <div class="capture-icon capture-iconfont capture-icon-zhongzhi" id="js-tool-reset"></div>
+      <div class="capture-icon capture-iconfont capture-icon-xiazai" id="js-tool-save"></div>
+      <div class="capture-icon capture-iconfont capture-icon-quxiao" id="js-tool-close"></div>
+      <div class="capture-icon capture-iconfont capture-icon-wancheng" id="js-tool-ok"></div>
+    </div>
+  </div>
+  <div id="js-tool-toast" class="capture-toast">
+    <div class="capture-icon capture-iconfont capture-icon-wancheng"></div>
+  </div>
+  <script>
+    // 处理快捷键截屏鼠标bug
+    setTimeout(()=> {
+      document.body.style.cursor = 'default'
+    }, 100)
+  </script>
+</body>
+
+</html>
