@@ -16,6 +16,7 @@
     "vuex"
   ],
   "author": "moxiu-fe (https://github.com/moxiu-fe)",
+  "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development node .electron-vue-ts/dev-runner.js",
     "build": "npm run pack && npm run electron:build",
