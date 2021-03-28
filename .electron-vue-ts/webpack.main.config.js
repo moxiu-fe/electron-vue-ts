@@ -7,7 +7,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const TerserPlugin = require("terser-webpack-plugin");
-const nodeExternals = require('webpack-node-externals');
 
 const isProduction = process.env.NODE_ENV !== "development"; // 除开发development外，其他环境（生产production、测试test）统一采用生产打包配置
 
@@ -19,6 +18,7 @@ let mainConfig = {
     filename: "main.js",
     path: path.join(__dirname, "../app/main"),
   },
+  devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
   resolve: {
     alias: {
       '@addon': path.join(__dirname, '../src/addon'),
@@ -29,9 +29,6 @@ let mainConfig = {
     enforceExtension: false,
     extensions: [".ts", ".js", ".json", ".node"]
   },
-  externals: [
-    // nodeExternals()
-  ],
   module: {
     rules: [
       {
@@ -110,8 +107,6 @@ if (isProduction) {
       })
     );
   }
-} else {
-  mainConfig.devtool = "inline-source-map";
 }
 
 module.exports = mainConfig;

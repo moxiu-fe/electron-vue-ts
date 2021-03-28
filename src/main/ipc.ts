@@ -50,7 +50,6 @@ export function ipcListener() {
   });
 
   ipcMain.on('download-update', (event: IpcMainEvent): void => {
-    handleWindow('update', 'close');
     downloadUpdate();
   });
 

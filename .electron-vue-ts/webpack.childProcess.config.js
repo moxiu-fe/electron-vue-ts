@@ -18,6 +18,7 @@ let childProcessConfig = {
     filename: "[name]",
     path: path.join(__dirname, "../app/childProcess"),
   },
+  devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
   resolve: {
     alias: {
       '@addon': path.join(__dirname, '../src/addon'),
@@ -97,8 +98,6 @@ if (isProduction) {
       })
     );
   }
-} else {
-  childProcessConfig.devtool = "inline-source-map";
 }
 
 module.exports = childProcessConfig;

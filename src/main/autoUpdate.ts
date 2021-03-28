@@ -3,7 +3,6 @@ import { createWindow, sendMsgToWindow } from './winHelper';
 import * as is from '@common/is';
 import log from './main.log';
 
-// @TODO:锁优化
 let autoUpdateLock: boolean = false;
 let newVersionInfo: object = {};
 let timer: Timer = null;
@@ -76,15 +75,12 @@ export function checkForUpdate(interval: number = 4 * 60 * 60 * 1000) {
 }
 
 export function downloadUpdate(): void {
-  createWindow('updateDownload', {
-    didFinishLoadMsg: newVersionInfo,
-    reload: false,
-    winOptions: {}
-  });
   autoUpdater.downloadUpdate();
+  // your download update progress bar
 }
 
 export function quitAndInstall(): void {
+  // close all browserWindows
   const browserWindows = global.browserWindows || {};
   for (const winName in browserWindows) {
     const win = global.browserWindows[winName];

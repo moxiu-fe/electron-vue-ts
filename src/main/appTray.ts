@@ -5,7 +5,7 @@ import { handleWindow } from './winHelper';
 let appTray: Tray | null;
 
 export function initTray(): void {
-  appTray = new Tray(path.resolve(__dirname, '../static/', 'logo_512x512@2x.png'));
+  appTray = new Tray(path.resolve(__dirname, '../static/', 'logo_16x16@2x.png'));
 
   appTray.setToolTip('electron-vue-ts');
 

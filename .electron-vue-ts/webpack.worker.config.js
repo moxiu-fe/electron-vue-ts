@@ -18,6 +18,7 @@ let workerConfig = {
     filename: "[name].js",
     path: path.join(__dirname, "../app/worker"),
   },
+  devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
   resolve: {
     alias: {
       '@addon': path.join(__dirname, '../src/addon'),
@@ -99,10 +100,6 @@ if (isProduction) {
       })
     );
   }
-} else {
-  workerConfig.devtool = "inline-source-map";
 }
-
-
 
 module.exports = workerConfig;

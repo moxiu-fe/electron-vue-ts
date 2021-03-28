@@ -45,32 +45,3 @@ export const index: WinConf = {
     maximizable: true
   })
 };
-
-export const update: WinConf = {
-  url: buildUrl('update.html'),
-  options: merge(cloneDeep(baseOptions), {
-    width: 372,
-    height: 382,
-    titleBarStyle: 'default',
-    title: '更新electron-vue-ts',
-    closable: true,
-    resizable: false,
-    minimizable: false,
-    maximizable: false,
-    alwaysOnTop: true
-  })
-};
-
-export const updateDownload: WinConf = {
-  url: buildUrl('updateDownload.html'),
-  options: merge(cloneDeep(baseOptions), {
-    width: 500,
-    height: 230,
-    titleBarStyle: 'default',
-    title: '安装新版本',
-    closable: true,
-    resizable: false,
-    minimizable: true,
-    maximizable: false
-  })
-};

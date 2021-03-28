@@ -21,11 +21,7 @@
     "pack:childProcess:stg": "cross-env NODE_ENV=test webpack --progress --colors --config .electron-vue-ts/webpack.childProcess.config.js",
     "pack:worker:stg": "cross-env NODE_ENV=test webpack --progress --colors --config .electron-vue-ts/webpack.worker.config.js",
     "pack:renderer:stg": "vue-cli-service build --mode stg",
-    "e2e": "npm run pack && mocha test/e2e",
-    "test": "npm run unit && npm run e2e",
-    "unit": "karma start test/unit/karma.conf.js",
-    "lint": "vue-cli-service lint",
-    "push:build": "ls -al dist"
+    "lint": "vue-cli-service lint"
   },
   "scripts-desc": {
     "dev": "运行开发环境",
@@ -43,35 +39,26 @@
     "pack:childProcess:stg": "测试环境 子进程 webpack 打包",
     "pack:worker:stg": "测试环境 worker进程 webpack 打包",
     "pack:renderer:stg": "测试环境 渲染进程 webpack 打包",
-    "e2e": "端到端测试",
-    "test": "测试",
-    "unit": "单元测试",
     "lint": "eslint 检测并修复代码格式"
   },
   "dependencies": {
-    "auto-launch": "^5.0.5",
     "axios": "^0.18.0",
     "compressing": "^1.5.0",
     "core-js": "^2.6.10",
     "crypto-js": "^3.1.9-1",
     "electron-log": "^3.0.6",
-    "electron-settings": "^3.2.0",
     "electron-updater": "4.0.6",
     "fs-extra": "^8.0.1",
-    "jsencrypt": "^3.0.0-rc.1",
     "lodash": "^4.17.11",
     "sudo-prompt": "^9.0.0",
     "uuid": "^8.1.0",
     "vue": "^2.6.10",
     "vue-class-component": "^7.2.3",
-    "vue-context": "^4.0.0",
     "vue-property-decorator": "^8.4.1",
     "vue-router": "^3.0.6",
     "vuex": "^3.1.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.0",
-    "@types/electron-settings": "^3.1.1",
     "@types/encodeurl": "^1.0.0",
     "@types/fs-extra": "^8.1.0",
     "@types/lodash": "^4.14.149",
@@ -110,20 +97,16 @@
     "pre-push": "^0.1.1",
     "pumpify": "^2.0.1",
     "sass-loader": "^8.0.2",
-    "sequelize-electron": "^1.0.2",
     "spectron": "^3.8.0",
     "split2": "^3.1.1",
-    "sqlite3-electron": "^4.1.0",
     "terser-webpack-plugin": "^2.3.5",
     "through2-filter": "^3.0.0",
     "through2-map": "^3.0.0",
     "typescript": "^3.8.3",
     "vue-template-compiler": "^2.6.10",
     "vuex-class": "^0.3.2",
-    "webpack-cli": "^3.3.11",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-cli": "^3.3.11"
   },
-  "extra-dependencies": {},
   "engines": {
     "node": ">= 8.15.0",
     "npm": ">= 5.6.0"

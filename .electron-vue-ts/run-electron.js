@@ -1,4 +1,3 @@
-
 "use strict";
 
 const { spawn } = require('child_process');
@@ -38,8 +37,8 @@ module.exports = function (args) {
   cp.stdout.pipe(removeJunk()).pipe(process.stdout);
   cp.stderr.pipe(removeJunk()).pipe(process.stderr);
 
-  return cp
-}
+  return cp;
+};
 
 
 

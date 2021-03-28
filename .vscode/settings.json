@@ -1,0 +1,70 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    }
+  ],
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.css": "prettier",
+  "vetur.format.defaultFormatter.postcss": "prettier",
+  "vetur.format.defaultFormatter.scss": "prettier",
+  "vetur.format.defaultFormatter.less": "prettier",
+  "vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+  "vetur.format.defaultFormatter.js": "prettier",
+  "vetur.format.defaultFormatter.ts": "prettier",
+  "vetur.format.defaultFormatter.sass": "sass-formatter",
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.options.useTabs": false,
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "printWidth": 300,
+      "semi": true,
+      "singleQuote": true
+    },
+    "wrap_attributes": "force-aligned",
+    "prettyhtml": {
+      "printWidth": 300,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": true
+    }
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "cSpell.words": [
+    "asar",
+    "babili",
+    "devtron",
+    "encodeurl",
+    "execpath",
+    "hhmmss",
+    "idents",
+    "jsencrypt",
+    "maximizable",
+    "minimizable",
+    "moxiu",
+    "onclosing",
+    "onconnecting",
+    "pumpify",
+    "scroller",
+    "spectron",
+    "submenu",
+    "unmaximize",
+    "updatedownload",
+    "vuex"
+  ]
+}

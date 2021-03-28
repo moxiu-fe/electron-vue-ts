@@ -8,11 +8,11 @@
       <img alt="TypeScript logo" src="../../../assets/images/logo_typescript.png" />
     </div>
 
-    <p class="welcome">Welcome to Your Electron + Vue.js + TypeScript App</p>
+    <p class="title">Welcome to Your Electron + Vue.js + TypeScript App</p>
 
     <ul class="versions-list">
       <li class="versions-list__item">electron: v{{versions.electron}}</li>
-      <li class="versions-list__item">vue.js: v2.6.10</li>
+      <li class="versions-list__item">vue.js: v2.6.12</li>
       <li class="versions-list__item">typescript: v3.8.3</li>
       <li class="versions-list__item">node: v{{versions.node}}</li>
       <li class="versions-list__item">chrome: v{{versions.chrome}}</li>
@@ -47,7 +47,7 @@ export default class Home extends Vue {
   margin: 0 20px;
 }
 
-.welcome {
+.title {
   margin: 40px 0;
 }
 .versions-list {

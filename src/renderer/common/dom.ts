@@ -1,9 +1,8 @@
-// dom class相关操作
-export function hasClass(el:Element, token:string):boolean {
+export function hasClass(el: Element, token: string): boolean {
   return new RegExp('(\\s|^)' + token + '(\\s|$)').test(el.className);
 }
 
-export function addClass(el:Element, token:string):void {
+export function addClass(el: Element, token: string): void {
   if (!el) return;
   if (el.classList) {
     el.classList.add(token);
@@ -12,7 +11,7 @@ export function addClass(el:Element, token:string):void {
   }
 }
 
-export function removeClass(el:Element, token:string):void {
+export function removeClass(el: Element, token: string): void {
   if (!el) return;
   if (el.classList) {
     el.classList.remove(token);

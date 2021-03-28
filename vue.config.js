@@ -6,9 +6,9 @@ const isProduction = process.env.NODE_ENV !== 'development'; // 除开发develop
 module.exports = {
   outputDir: 'app/renderer',
   publicPath: isProduction ? '.' : './',
+  productionSourceMap: true, // 等价于 devtool: productionSourceMap ? 'source-map' : false
   configureWebpack: {
     target: 'electron-renderer',
-    devtool: false,
     devServer: {
       port: 9090,
       disableHostCheck: true
