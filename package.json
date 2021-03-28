@@ -2,9 +2,20 @@
   "name": "electron-vue-ts",
   "version": "1.0.0",
   "description": "electron-vue-ts",
-  "author": "moxiu-fe",
-  "private": true,
   "main": "./app/main/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moxiu-fe/electron-vue-ts.git"
+  },
+  "keywords": [
+    "electron",
+    "vue",
+    "typescript",
+    "boilerplate",
+    "router",
+    "vuex"
+  ],
+  "author": "moxiu-fe (https://github.com/moxiu-fe)",
   "scripts": {
     "dev": "cross-env NODE_ENV=development node .electron-vue-ts/dev-runner.js",
     "build": "npm run pack && npm run electron:build",

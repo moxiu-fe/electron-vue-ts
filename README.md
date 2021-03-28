@@ -1,5 +1,6 @@
 # electron-vue-ts
-## The boilerplate for making electron applications built with vue and typescript ##
+## The boilerplate for making electron applications built with vue and typescript. ##
+[screenshot](https://github.com/moxiu-fe/electron-vue-ts/blob/master/README.md)
 
 ### Overview
 The aim of this project is to remove the need of manually setting up electron apps using vue and typescript.

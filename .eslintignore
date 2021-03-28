@@ -3,3 +3,4 @@ test/unit/*.js
 test/e2e/*.js
 src/**/*.ejs
 
+src/devToolsExtensions/**
