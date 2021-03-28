@@ -1,4 +1,3 @@
-// Prepare
 const { networkInterfaces } = require('os');
 const macRegex = /(?:[a-z0-9]{1,2}[:-]){5}[a-z0-9]{1,2}/i;
 const zeroRegex = /(?:[0]{1,2}[:-]){5}[0]{1,2}/;
