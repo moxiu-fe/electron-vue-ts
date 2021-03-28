@@ -1,7 +1,7 @@
 # electron-vue-ts
 ## The boilerplate for making electron applications built with vue and typescript. ##
 
-<img width="500" src="screenshot.png" alt="electron-vue">
+<img width="500" src="/screenshot.png" alt="electron-vue">
 
 ### Overview
 The aim of this project is to remove the need of manually setting up electron apps using vue and typescript.
